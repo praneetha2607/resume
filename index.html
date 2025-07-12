@@ -1,145 +1,143 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <title>Colorful Calculator</title>
+  <title>Resume - MARADANI PRANEETHA</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
-      text-align: center;
-      padding: 30px;
+      font-family: sans-serif;
+      background-color: #eaf6ea;
+      margin: 0;
+      padding: 20px;
+      transition: background 0.3s, color 0.3s;
     }
 
-    .calculator {
-      display: inline-block;
-      border: 2px solid #333;
+    .container {
+      width: 90%;
+      max-width: 800px;
+      margin: auto;
+      background-color: white;
+      border: 2px solid green;
       padding: 20px;
       border-radius: 10px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
     }
 
-    .display {
-      width: 220px;
-      height: 40px;
-      font-size: 24px;
-      margin-bottom: 10px;
-      text-align: right;
-      padding: 5px;
-    }
-
-    .even {
+    h1 {
       color: green;
-      font-weight: bold;
     }
 
-    .odd {
+    .profile {
+      float: right;
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      border: 2px solid green;
+    }
+
+    .section-title {
+      color: green;
+      border-bottom: 1px solid #ccc;
+      margin-top: 20px;
+      padding-bottom: 5px;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    a {
       color: blue;
-      font-weight: bold;
     }
 
-    .buttons {
-      display: grid;
-      grid-template-columns: repeat(4, 55px);
-      gap: 10px;
+    .footer {
+      margin-top: 20px;
+      font-size: 14px;
     }
 
-    .button {
-      padding: 15px;
-      font-size: 18px;
-      cursor: pointer;
+    .dark-mode {
+      background-color: #1c1c1c;
+      color: #e0e0e0;
+    }
+
+    .dark-mode .container {
+      background-color: #2c2c2c;
+      border-color: lightgreen;
+    }
+
+    .dark-mode .section-title {
+      color: lightgreen;
+    }
+
+    .dark-mode a {
+      color: lightblue;
+    }
+
+    .toggle-btn {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: green;
+      color: white;
       border: none;
-      border-radius: 5px;
-      background: #eee;
-    }
-
-    .button:hover {
-      background: #ccc;
-    }
-
-    .clear-button {
-      background: rgb(85, 190, 223);
-      color: rgb(240, 236, 236);
-      grid-column: span 4;
-    }
-
-    .clear-button:hover {
-      background: rgb(41, 44, 46);
+      border-radius: 15px;
+      padding: 8px 14px;
+      cursor: pointer;
     }
   </style>
 </head>
 <body>
 
-  <div class="calculator">
-    <input type="text" id="display" class="display" readonly>
-    <div class="buttons">
-      <button class="button" onclick="appendNumber('7')">7</button>
-      <button class="button" onclick="appendNumber('8')">8</button>
-      <button class="button" onclick="appendNumber('9')">9</button>
-      <button class="button" onclick="appendOperator('/')">÷</button>
+  <div class="container">
+    <img class="profile" src="C:\Users\prane\OneDrive\Pictures\profile.jpg" alt="Profile Pic">
 
-      <button class="button" onclick="appendNumber('4')">4</button>
-      <button class="button" onclick="appendNumber('5')">5</button>
-      <button class="button" onclick="appendNumber('6')">6</button>
-      <button class="button" onclick="appendOperator('*')">×</button>
+    <h1>PRANEETHA MARADANI</h1>
+    <p>Email: <a href="mailto:praneethamaradani771@gmail.com">praneethamaradani771@gmail.com</a></p>
+    <p>Phone: 8500103333</p>
+    <p>Location: Bhimavaram, India</p>
 
-      <button class="button" onclick="appendNumber('1')">1</button>
-      <button class="button" onclick="appendNumber('2')">2</button>
-      <button class="button" onclick="appendNumber('3')">3</button>
-      <button class="button" onclick="appendOperator('-')">−</button>
+    <h3 class="section-title">About Me</h3>
+    <p>I am a passionate full-stack developer with a strong interest in building responsive web applications and user-centric solutions.</p>
 
-      <button class="button" onclick="appendNumber('0')">0</button>
-      <button class="button" onclick="appendNumber('.')">.</button>
-      <button class="button" onclick="calculate()">=</button>
-      <button class="button" onclick="appendOperator('+')">+</button>
+    <h3 class="section-title">Skills</h3>
+    <ul>
+      <li>Languages: JavaScript, Python, Java</li>
+      <li>Web: HTML5, CSS3,</li>
+      <li>Databases: MySQL</li>
+      <li>Tools: Git, VS Code, google colob</li>
+    </ul>
 
-      <button class="button clear-button" onclick="clearDisplay()">Clear</button>
-    </div>
+    <h3 class="section-title">Projects</h3>
+    <ul>
+      <li><b>sleep prediction website</b> – Created a personal sleep prediction site using HTML, CSS, and JS.</li>
+      <li><b>best time to sell</b> – Built a model on timming to sell a product for small time vendors using Machine Learning.</li>
+      <li><b>Smart Canteen App</b> – build a app for our college canteen.</li>
+    </ul>
+
+    <h3 class="section-title">Certifications</h3>
+    <ul>
+      <li>prajwalan hackthon paticipation certificate – prajwalan (2025) </li>
+      <li>ML Xplore workshop – ML Xplore</li>
+    </ul>
+
+    <h3 class="section-title">Hobbies</h3>
+    <ul>
+      <li>I'm passsionate about editing.</li>
+      <li>like to learn coding in my free time</li>
+      <li>reading books</li>
+    </ul>
+
+    <h3 class="section-title">Contact</h3>
+    <p>Email: <a href="mailto:praneethamaradani771@gmail.com">praneethamaradani771@gmail.com</a></p>
+    <p>GitHub: <a href="https://github.com/praneetha2607">github.com/praneetha2607</a></p>
+    <p>LinkedIn: <a href="https:www.linkedin.com/in/prani-praneetha-aa5237292">www.linkedin.com/in/prani-praneetha-aa5237292</a></p>
+
+    <div class="footer">© 2025 Praneetha maradani</div>
   </div>
 
+  <button class="toggle-btn" onclick="toggleDark()">🌙 Dark Mode</button>
+
   <script>
-    const display = document.getElementById('display');
-
-    function appendNumber(num) {
-      display.className = '';
-      display.value += num;
-    }
-
-    function appendOperator(op) {
-      if (display.value !== '' && !isOperator(display.value.slice(-1))) {
-        display.className = '';
-        display.value += op;
-      }
-    }
-
-    function isOperator(char) {
-      return ['+', '-', '*', '/'].includes(char);
-    }
-
-    function calculate() {
-      try {
-        const result = eval(display.value);
-        display.value = result;
-
-        display.classList.remove('even', 'odd');
-
-        if (Number.isInteger(result)) {
-          if (result % 2 === 0) {
-            display.classList.add('even');
-          } else {
-            display.classList.add('odd');
-          }
-        } else {
-          display.className = ''; // No color for decimals
-        }
-      } catch {
-        display.value = 'Error';
-        display.className = '';
-      }
-    }
-
-    function clearDisplay() {
-      display.value = '';
-      display.className = '';
+    function toggleDark() {
+      document.body.classList.toggle("dark-mode");
     }
   </script>
 
